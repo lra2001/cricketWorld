@@ -12,6 +12,15 @@ body {
     line-height: 1.6;
 }
 
+h2{
+    text-align: center;    
+    color: #393E46;
+}
+
+h3{
+    text-shadow: 2px 2px #EEEEEE;
+}
+
 header {
     background-image: linear-gradient(to top, #222831, #393E46, #00ADB5, #EEEEEE);
     color: #EEEEEE;
@@ -87,6 +96,38 @@ article{
 
 .article-text {
     flex: 1;
+}
+
+.cite{
+    font-size: medium;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+    color: #00ADB5;
+}
+
+form{        
+    border: 5px solid #222831;
+    border-radius: 15px;
+    background-color: #00ADB5;
+    width: 30%;
+    padding: 10px;
+    margin: 20px auto;
+    font-weight: bold;
+    color: #393E46;
+    text-align: left;
+}
+
+.button {       
+    cursor: pointer;
+    background-color: #393E46;
+    color: #EEEEEE;
+    border-radius: 15px;    
+  }
+  
+.button:hover {
+    background-color: #EEEEEE;
+    color: #393E46;
 }
 
 footer {
