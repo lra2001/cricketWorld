@@ -20,6 +20,7 @@ a
 - Favicon: uploaded logo to https://favicon.io/favicon-converter/ and downloaded the converted file
 - Footer: https://stackoverflow.com/questions/4562587/shortest-way-to-print-current-year-in-a-website
 Website
+- Validate html: https://validator.w3.org/
 - Color Selection: https://colorhunt.co/palette/222831393e4600adb5eeeeee
   - Dark Black #222831
   - Black #393E46
