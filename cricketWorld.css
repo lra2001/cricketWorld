@@ -2,8 +2,12 @@
 
 /* General reset */
 body {
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 10px;
     font-family: Arial, sans-serif;
+    text-align: center;
     background-color: #EEEEEE;
     line-height: 1.6;
 }
@@ -50,15 +54,39 @@ header {
     color: #00ADB5;
 }
 
-main {
-    padding: 2rem;
-    text-align: center;
-}
-
 iframe {
     max-width: 100%;
     height: auto;
     border: none;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    color: #393E46;
+    margin: 10px 0px;
+    padding: 10px;
+    border: 2px solid #393E46;
+    border-radius: 15px;    
+}
+
+.article img {
+    max-width: 20%;
+    height: auto;
+    padding: 10px;
+}
+
+.article.right img {
+    order: 2;
+}
+
+.article.left img {
+    order: 0;
+}
+
+.article-text {
+    flex: 1;
 }
 
 footer {
