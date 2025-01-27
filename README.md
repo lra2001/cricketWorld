@@ -16,6 +16,7 @@ a
 ### Assessment
 - Create a Cricket themed sports page 
 - Logo: created logo on https://www.canva.com/create/logos/
+- Resize images: https://www.iloveimg.com/
 - Favicon: uploaded logo to https://favicon.io/favicon-converter/ and downloaded the converted file
 - Footer: https://stackoverflow.com/questions/4562587/shortest-way-to-print-current-year-in-a-website
 Website

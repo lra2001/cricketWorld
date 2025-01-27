@@ -1,74 +1,74 @@
-* 
+*
+
+/* General reset */
+body {
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #EEEEEE;
+    line-height: 1.6;
+}
 
 header {
-    background: #00ADB5;
+    background-image: linear-gradient(to top, #222831, #393E46, #00ADB5, #EEEEEE);
     color: #EEEEEE;
     padding: 1rem;
     text-align: center;
-    border: 5px solid #00ADB5;    
+    border-radius: 15px;
 }
 
-.logo{
-    height:"10px";
-    width:"10px";
-    text-align: left;
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-body {
-background-color: #EEEEEE;
-background-image: url(images/logo.png);
-background-attachment: fixed;
-background-position: center;
-background-repeat:no-repeat;
-font-family: Arial, Helvetica, sans-serif;
-color: #393E46;
-text-align: center;
-margin: auto;
-padding: 10px;
+.logo {
+    height: auto;
+    width: auto;
 }
 
-main{
-    background-color: #EEEEEE;
-    border: 5px solid #00ADB5;
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
-h1{
-    text-align: center;
-    background-color:  #00ADB5;
+.nav-menu li {
+    margin: 0 1rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
     color: #EEEEEE;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-h2{
+.nav-menu a:hover {
+    color: #00ADB5;
+}
+
+main {
+    padding: 2rem;
     text-align: center;
-    color: #393E46;
 }
 
-h3{
-    text-align: center;   
-}
-
-.youtube{
-    width:auto;
-    height:auto;
-    border:2px solid #00ADB5;    
+iframe {
+    max-width: 100%;
+    height: auto;
+    border: none;
 }
 
 footer {
-    background: #393E46;
+    background: #222831;
     color: #EEEEEE;
-    text-align: center;
-    font-size: small;
     font-style: italic;
+    font-size: small;
+    text-align: center;
     padding: 1rem;
     position: relative;
     bottom: 0;
-}
-
-#contactUs {
-    background: #EEEEEE;
-    text-align: center;
-    padding: 5px;
-    position: relative;
-    width: 10%;
-    border-radius: 12px;
+    border-radius: 15px;
 }
