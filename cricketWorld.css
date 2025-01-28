@@ -29,6 +29,10 @@ header {
     border-radius: 15px;
 }
 
+img.logo {
+    display: block;  /* Ensure the logo is visible */
+}
+
 
 /* Banner styles */
 .banner {
@@ -244,7 +248,7 @@ footer {
     border-radius: 15px;
 }
 
-/* Prevent images from displaying by default */
+/* Prevent images from displaying by default except logo */
 img {
     display: none;
 }
