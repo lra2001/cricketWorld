@@ -78,6 +78,7 @@ header {
     background-color: #EEEEEE;
 }
 
+/* If screen is smaller than 768px, then display the hamburger style hamburger menu */
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
@@ -100,17 +101,19 @@ header {
     }
 }
 
-/* Hiding Navigation for Smaller Screens */
+/* Hide Navigation on Smaller Screens */
 #menu-toggle {
     display: none;
 }
 
+/* Sytling for the iFrame used on the embedded YouTube video */
 iframe {
     max-width: 100%;
     height: auto;
     border: none;
 }
 
+/* Styling for articles */
 article {
     display: flex;
     flex-wrap: wrap;
@@ -140,6 +143,7 @@ article {
     flex: 1;
 }
 
+/* Styling for citation from a different source */
 .cite {
     font-size: medium;
     font-weight: bolder;
@@ -148,6 +152,7 @@ article {
     color: #00ADB5;
 }
 
+/* Styling for forms and buttons, including resonsive behavior */
 form {
     border: 5px solid #222831;
     border-radius: 15px;
@@ -200,7 +205,7 @@ form input[type="checkbox"] {
 @media (max-width: 768px) {
     form {
         width: 80%;
-        /* Increase width on smaller screens */
+        /* Wider on smaller screens */
         padding: 15px;
     }
 
@@ -229,4 +234,17 @@ form input[type="checkbox"] {
         bottom: 0;
         border-radius: 15px;
     }
+
+    /* Prevent images from displaying by default */
+img {
+    display: none;
+  }
+  
+  /* Images only display on screens over 900px */
+  @media screen and (min-width: 900px) {
+    img {
+      display: block;
+    }
+  }
+
 }
