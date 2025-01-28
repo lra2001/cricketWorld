@@ -9,6 +9,7 @@ body {
 }
 
 /* Heading styles */
+
 h2 {
     text-align: center;
     color: #393E46;
@@ -202,6 +203,52 @@ form input[type="checkbox"] {
     color: #393E46;
 }
 
+table {
+    width: auto;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 2em;
+    font-weight: bold;
+    color: #393E46;
+}
+
+thead {
+    background-color: #00ADB5;
+}
+
+th, td {
+    border-style: solid;
+}
+
+tbody {
+    font-family: Arial, sans-serif;
+    font-size: .90em;
+}
+
+tr:nth-child(even) {
+    background-color: #00ADB5;
+}
+
+footer {
+    background: #393E46;
+    color: #EEEEEE;
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    border-radius: 15px;
+}
+
+/* Prevent images from displaying by default */
+img {
+    display: none;
+}
+
 @media (max-width: 768px) {
     form {
         width: 80%;
@@ -223,28 +270,11 @@ form input[type="checkbox"] {
         margin-right: 8px;
     }
 
-    footer {
-        background: #222831;
-        color: #EEEEEE;
-        font-style: italic;
-        font-size: small;
-        text-align: center;
-        padding: 1rem;
-        position: relative;
-        bottom: 0;
-        border-radius: 15px;
+    /* Images only display on screens over 900px */
+    @media screen and (min-width: 900px) {
+        img {
+            display: block;
+        }
     }
-
-    /* Prevent images from displaying by default */
-img {
-    display: none;
-  }
-
-  /* Images only display on screens over 900px */
-  @media screen and (min-width: 900px) {
-    img {
-      display: block;
-    }
-  }
 
 }
