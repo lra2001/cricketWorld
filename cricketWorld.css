@@ -239,7 +239,7 @@ form input[type="checkbox"] {
 img {
     display: none;
   }
-  
+
   /* Images only display on screens over 900px */
   @media screen and (min-width: 900px) {
     img {
