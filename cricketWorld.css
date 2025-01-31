@@ -9,13 +9,25 @@ body {
 
 /* Heading styles */
 
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    text-shadow: 5px 5px 10px #222831;
+}
+
 h2 {
     text-align: center;
     color: #393E46;
+    text-shadow: 5px 5px 10px #EEEEEE;
 }
 
 h3 {
-    text-shadow: 2px 2px #EEEEEE;
+    text-shadow: 5px 5px 10px #EEEEEE;
+}
+
+p{
+    text-align: justify;
+    padding: 10px;
 }
 
 /* Header styles */
@@ -55,7 +67,7 @@ header {
     color: #00ADB5;
 }
 
-/* Hamburger Menu Styles */
+/* Hamburger Menu Styles for smaller screens */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -100,7 +112,7 @@ header {
 
 /* Sytling for the iFrame used on the embedded YouTube video */
 iframe {
-    /* ensure video size on page is large enough by setting its width to 80% and height to 60% of the viewport */
+    /* ensure video size on page is large enough to be noticeable by setting its width to 80% and height to 60% of the viewport */
     width: 80vw;
     height: 60vh;
     border: 5px #00ADB5;
@@ -146,37 +158,66 @@ article {
     color: #00ADB5;
 }
 
-/* Styling for forms and buttons, including resonsive behavior */
+/* Styling for forms to display in the center of the form and max-width */
 form {
     border: 5px solid #222831;
     border-radius: 15px;
     background-color: #00ADB5;
-    width: 50%;
+    width: 50%; /* Prevents form from distorting */
+    max-width: 500px; /* Don't allow wigth to be larger than 500px */
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px auto; /* Set margins to center form */
     font-weight: bold;
     color: #393E46;
-    text-align: left;
+    text-align: center; /* Center headings */
     box-sizing: border-box;
 }
 
-form label {
-    display: block;
+/* Center checkbox and content alignment */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     margin-bottom: 10px;
-    font-size: 1.1rem;
-    color: #393E46;
 }
 
+/* Align all labels to checkboxes by setting a fixed width */
+.checkbox-group label {
+    min-width: 150px;
+    text-align: left;
+}
+
+/* Ensure layout doesn't break due to checkbox width */
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+/* Ensure remaining elements are also centered (text and email inputs and buttons) */
 form input[type="text"],
 form input[type="email"],
-form input[type="checkbox"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    border: 1px solid #393E46;
-    font-size: 1rem;
-    box-sizing: border-box;
+form button {
+    width: 90%; /* Reduces width to fit form better */
+    display: block; /* Ensures block-level layout */
+    margin: 0 auto 15px; /* Centers and adds spacing */
+}
+
+/* Adjust input width for better design and avoid stretching */
+form input[type="text"],
+form input[type="email"] {
+    width: 70%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Styling for buttons */
+
+/* Keep buttons at the same width as text and email for consistency and ensure buttons don't become too large*/
+.button {
+    width: 70%;
+    max-width: 300px;
 }
 
 .button {
@@ -187,13 +228,23 @@ form input[type="checkbox"] {
     padding: 10px 20px;
     font-size: 1.1rem;
     border: none;
-    margin: 10px 0;
-    width: 100%;
+    margin: 10px auto;
+    width: 90%;
 }
 
 .button:hover {
     background-color: #EEEEEE;
     color: #393E46;
+}
+
+/* Responsive text and email input design for small screens */
+@media screen and (max-width: 600px) {
+    form input[type="text"],
+    form input[type="email"],
+    .button {
+        width: 90%;
+        max-width: 100%;
+    }
 }
 
 table {
@@ -240,7 +291,6 @@ footer {
 @media (max-width: 768px) {
     form {
         width: 80%;
-        /* Wider on smaller screens */
         padding: 15px;
     }
 
