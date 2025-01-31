@@ -9,7 +9,7 @@ body {
 
 /* Heading styles */
 
-h1{
+h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: oblique;
     text-shadow: 5px 5px 10px #222831;
@@ -32,9 +32,15 @@ h5 {
     text-align: center;
 }
 
-p{
+p {
     text-align: justify;
     padding: 10px;
+}
+
+.contact {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
 }
 
 /* Header styles */
@@ -170,13 +176,17 @@ form {
     border: 5px solid #222831;
     border-radius: 15px;
     background-color: #00ADB5;
-    width: 50%; /* Prevents form from distorting */
-    max-width: 500px; /* Don't allow wigth to be larger than 500px */
+    width: 50%;
+    /* Prevents form from distorting */
+    max-width: 500px;
+    /* Don't allow wigth to be larger than 500px */
     padding: 20px;
-    margin: 20px auto; /* Set margins to center form */
+    margin: 20px auto;
+    /* Set margins to center form */
     font-weight: bold;
     color: #393E46;
-    text-align: center; /* Center headings */
+    text-align: center;
+    /* Center headings */
     box-sizing: border-box;
 }
 
@@ -205,9 +215,12 @@ form {
 form input[type="text"],
 form input[type="email"],
 form button {
-    width: 90%; /* Reduces width to fit form better */
-    display: block; /* Ensures block-level layout */
-    margin: 0 auto 15px; /* Centers and adds spacing */
+    width: 90%;
+    /* Reduces width to fit form better */
+    display: block;
+    /* Ensures block-level layout */
+    margin: 0 auto 15px;
+    /* Centers and adds spacing */
 }
 
 /* Adjust input width for better design and avoid stretching */
@@ -246,6 +259,7 @@ form input[type="email"] {
 
 /* Responsive text and email input design for small screens */
 @media screen and (max-width: 600px) {
+
     form input[type="text"],
     form input[type="email"],
     .button {
@@ -321,4 +335,21 @@ footer {
     img {
         display: none;
     }
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5px;
+    border: solid 5px #00ADB5;
+    width: 90%;
+    margin: 0 auto 15px;
+    max-height: 600px;
+}
+
+.gallery-img {
+    max-height: 300px;
+    max-width: 400px;
 }
