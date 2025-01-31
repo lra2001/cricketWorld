@@ -25,6 +25,13 @@ h3 {
     text-shadow: 5px 5px 10px #EEEEEE;
 }
 
+h5 {
+    color: #EEEEEE;
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}
+
 p{
     text-align: justify;
     padding: 10px;
