@@ -48,7 +48,10 @@ header {
     background-image: linear-gradient(to top, #222831, #393E46, #00ADB5, #EEEEEE);
     color: #EEEEEE;
     padding: 1rem;
-    position: relative;
+    position: fixed; /* Prevent header from moving when scrolling down */
+    width: 100%; /* Use full width */
+    top: 0; /* Don't use a margin on top */
+    z-index: 1000;
     text-align: center;
 }
 
