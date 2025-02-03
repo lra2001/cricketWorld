@@ -169,6 +169,8 @@ article {
     font-style: italic;
     text-decoration: underline;
     color: #00ADB5;
+    text-align: center;  /* Ensure text displays centered */
+    padding: 0;
 }
 
 /* Styling for forms to display in the center of the form and max-width */
@@ -339,17 +341,23 @@ footer {
 
 .gallery {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 5px;
-    border: solid 5px #00ADB5;
-    width: 90%;
-    margin: 0 auto 15px;
-    max-height: 600px;
+    justify-content: center;
+    gap: 10px; /* Add spacing between images */
+    padding: 10px;
+    max-width: 100%;
 }
 
 .gallery-img {
-    max-height: 300px;
-    max-width: 400px;
+    width: 100%;
+    max-width: 400px; /* Apply a width limit */
+    height: auto;
+    object-fit: cover; /* Keeps images aspect ratio and fill the given dimension */
+    border-radius: 10px; /* Add rounded edges to images */
+}
+
+@media (max-width: 600px) { /* Ensure images in gallery only load for screens bigger than 600px */
+    .gallery-img {
+        max-width: 90%;
+    }
 }
