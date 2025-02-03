@@ -76,6 +76,12 @@ header {
     transition: color 0.3s;
 }
 
+.nav-menu a.active {
+    color: #EEEEEE;
+    border-bottom: 2px solid #EEEEEE; /* Add bordor at bottom to cleary identify page selected */
+    padding: 3px;
+}
+
 .nav-menu a:hover {
     color: #00ADB5;
 }
