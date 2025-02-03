@@ -356,7 +356,10 @@ footer {
     border-radius: 10px; /* Add rounded edges to images */
 }
 
-@media (max-width: 600px) { /* Ensure images in gallery only load for screens bigger than 600px */
+@media (max-width: 600px) { /* Ensure images and heading in gallery only load for screens bigger than 600px */
+    .gallery-heading {
+        display: none;
+    }
     .gallery-img {
         max-width: 90%;
     }
