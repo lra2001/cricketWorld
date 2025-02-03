@@ -48,13 +48,15 @@ p {
 header {
     background-image: linear-gradient(to top, #222831, #393E46, #00ADB5, #EEEEEE);
     color: #EEEEEE;
-    padding: 1rem;
+    padding: 0 10px;
     position: fixed; /* Prevent header from moving when scrolling down */
     width: 100%; /* Use full width */
     top: 0; /* Start element on top of page */
     left: 0; /* Start element on left of page */
     z-index: 1000;
     text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 /* Banner styles */
@@ -62,6 +64,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Avoid overflow using wrap */
+    width: 100%;
 }
 
 /* NavBar styles */
@@ -106,8 +110,8 @@ header {
     background-color: #EEEEEE;
 }
 
-/* If screen is smaller than 768px, then display the hamburger style menu */
-@media (max-width: 768px) {
+/* If screen is smaller than 823px, then display the hamburger style menu */
+@media (max-width: 823px) {
     .nav-menu {
         display: none;
         flex-direction: column;
