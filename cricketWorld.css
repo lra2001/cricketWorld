@@ -5,6 +5,7 @@ body {
     text-align: center;
     background-color: #EEEEEE;
     line-height: 1.6;
+    padding-top: 100px;
 }
 
 /* Heading styles */
@@ -50,7 +51,8 @@ header {
     padding: 1rem;
     position: fixed; /* Prevent header from moving when scrolling down */
     width: 100%; /* Use full width */
-    top: 0; /* Don't use a margin on top */
+    top: 0; /* Start element on top of page */
+    left: 0; /* Start element on left of page */
     z-index: 1000;
     text-align: center;
 }
